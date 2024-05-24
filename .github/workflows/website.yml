@@ -17,8 +17,8 @@ jobs:
         shell: bash
     steps:
       - name: Set up Ruby
-      - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
+        uses: actions/checkout@v4
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.7'
 
