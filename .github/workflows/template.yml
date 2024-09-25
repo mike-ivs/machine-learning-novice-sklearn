@@ -73,6 +73,7 @@ jobs:
         working-directory: lesson
         run: |
           echo "count=$(shopt -s nullglob; files=($(find . -iname '*.Rmd')); echo ${#files[@]})" >> $GITHUB_OUTPUT
+
       - name: Set up R
         if: steps.check-rmd.outputs.count != 0
         uses: r-lib/actions/setup-r@v2
